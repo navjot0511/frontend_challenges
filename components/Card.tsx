@@ -7,17 +7,17 @@ const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
   <StyledWrapper>
     <div className="card">
       <div className="card-background" />
-      <Link href={`/challenges/${src}/`} passHref>
-        <a>
-          <div className="card-image">
-            <Image
-              src={`/assets/challenges/${src}/design/${image}`}
-              width={400}
-              height={300}
-              alt={title}
-            />
-          </div>
-        </a>
+      <Link href={`/challenges/${src}/`}>
+
+        <div className="card-image">
+          <Image
+            src={`/assets/challenges/${src}/design/${image}`}
+            width={400}
+            height={300}
+            alt={title}
+          />
+        </div>
+
       </Link>
       <div className="card-body">
         <div className="card-info">
@@ -33,8 +33,8 @@ const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
           >
             Code
           </a>
-          <Link href={`/challenges/${src}/`} passHref>
-            <a className="btn">View</a>
+          <Link href={`/challenges/${src}/`} className="btn">
+            View
           </Link>
         </div>
       </div>
