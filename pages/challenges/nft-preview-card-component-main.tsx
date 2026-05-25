@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next"
 import styled from "styled-components"
-import Image from 'next/future/image'
+import Image from "next/image"
 import ImageEquilibrium from '../../public/assets/challenges/nft-preview-card-component-main/images/image-equilibrium.jpg'
 
 const Page: NextPage = () => {

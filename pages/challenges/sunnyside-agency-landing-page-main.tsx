@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next"
 import styled from "styled-components"
-import Image from 'next/future/image'
+import Image from "next/image"
 import Logo from '../../public/assets/challenges/sunnyside-agency-landing-page-main/images/logo.svg'
 import HamburgerIcon from '../../public/assets/challenges/sunnyside-agency-landing-page-main/images/icon-hamburger.svg'
 import HeroImage from '../../public/assets/challenges/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg'

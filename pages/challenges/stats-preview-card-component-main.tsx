@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import styled from 'styled-components'
 import HeaderImage from '../../public/assets/challenges/stats-preview-card-component-main/images/image-header-desktop.jpg'
-import Image from 'next/future/image'
+import Image from "next/image"
 
 const StatsPage: NextPage = () => {
   return (

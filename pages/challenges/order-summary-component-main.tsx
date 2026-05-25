@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import IllustrationHero from '../../public/assets/challenges/order-summary-component-main/images/illustration-hero.svg'
 import styled from 'styled-components'
 

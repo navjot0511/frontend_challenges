@@ -2,7 +2,7 @@ import type { NextPage } from "next"
 import type { MovieType } from "../../types"
 import styled from "styled-components"
 import { useQuery } from "react-query"
-import Image from "next/future/image"
+import Image from "next/image"
 import Head from "next/head"
 
 const fetchMovies = async (): Promise<MovieType[]> => fetch("/api/movies").then(res => res.json())

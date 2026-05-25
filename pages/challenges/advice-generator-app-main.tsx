@@ -1,6 +1,6 @@
 import type { NextPage } from "next"
 import styled from "styled-components"
-import Image from "next/future/image"
+import Image from "next/image"
 import { useQuery } from "react-query"
 import Head from "next/head"
 

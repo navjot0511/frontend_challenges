@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import type { ChallengeType } from "../types";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
