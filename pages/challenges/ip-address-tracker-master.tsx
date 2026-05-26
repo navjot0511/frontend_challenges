@@ -4,7 +4,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import dynamic from "next/dynamic";
 import { useQuery } from "react-query";
-const Map = dynamic(() => import("../../components/Map"), { ssr: false });
+const MapComp = dynamic(() => import("../../components/Map"), { ssr: false });
 import Head from "next/head";
 
 const IPIFY_API_KEY = process.env.NEXT_PUBLIC_API_UR;
@@ -108,7 +108,7 @@ const IPTrackerPage: NextPage = () => {
         </div>
 
         <div id="map">
-          <Map
+          <MapComp
             position={
               data?.location && [data?.location.lat, data?.location?.lng]
             }

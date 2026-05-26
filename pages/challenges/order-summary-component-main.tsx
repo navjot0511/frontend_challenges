@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from "next/legacy/image"
-import IllustrationHero from '../../public/assets/challenges/order-summary-component-main/images/illustration-hero.svg'
-import styled from 'styled-components'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import IllustrationHero from "../../public/assets/challenges/order-summary-component-main/images/illustration-hero.svg";
+import styled from "styled-components";
 
 const OrderSummary: NextPage = () => {
   return (
@@ -12,25 +12,19 @@ const OrderSummary: NextPage = () => {
       </Head>
       <section className="card">
         <div className="card__hero">
-          <Image
-            src={IllustrationHero}
-            alt="illustration-hero"
-          />
+          <Image src={IllustrationHero} alt="illustration-hero" />
         </div>
         <div className="card__body">
-          <h1 className="card__title">
-            Order Summary
-          </h1>
+          <h1 className="card__title">Order Summary</h1>
           <p className="card__subtitle">
-            You can now listen to millions of songs,
-            audiobooks, and podcasts on any device
-            anywhere you like!
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
           </p>
 
           <div className="card__orderPlan">
-            <Img 
-              src='/assets/challenges/order-summary-component-main/images/icon-music.svg' 
-              alt="icon-music" 
+            <Img
+              src="/assets/challenges/order-summary-component-main/images/icon-music.svg"
+              alt="icon-music"
             />
             <span>
               <b>Annual Plan</b>
@@ -44,13 +38,12 @@ const OrderSummary: NextPage = () => {
           <button className="card__btn-primary">Proceed to Payment</button>
           <button className="card__btn-secondary">Cancel Order</button>
         </div>
-
       </section>
     </PageWrapper>
-  )
-}
+  );
+};
 
-export default OrderSummary
+export default OrderSummary;
 
 const PageWrapper = styled.div`
   display: grid;
@@ -67,9 +60,11 @@ const PageWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
 
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 
-  a { color: hsl(228, 45%, 44%); }
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 
   button {
     cursor: pointer;
@@ -80,7 +75,7 @@ const PageWrapper = styled.div`
     max-width: 352px;
     background-color: white;
     overflow: hidden;
-    border-radius: .85rem;
+    border-radius: 0.85rem;
     margin: 1rem;
   }
 
@@ -129,7 +124,7 @@ const PageWrapper = styled.div`
     transform: translateX(-20px);
   }
 
-  .card__orderPlan > img{
+  .card__orderPlan > img {
     width: 2.6rem;
   }
 
@@ -144,7 +139,6 @@ const PageWrapper = styled.div`
   /* CARD FOOTER */
   .card__footer {
     padding: 0 2rem;
-    
   }
 
   .card__btn-primary {
@@ -170,7 +164,7 @@ const PageWrapper = styled.div`
     padding: 0.8rem;
     border-radius: 0.45rem;
     font-size: 0.9rem;
-    font-weight: 600; 
+    font-weight: 600;
     margin: 0.9rem 0;
     color: var(--desaturated-blue);
     transition: color 500ms;
@@ -180,12 +174,11 @@ const PageWrapper = styled.div`
     color: black;
   }
 
-
   @media screen and (min-width: 1024px) {
     & {
       background-image: url("/assets/challenges/order-summary-component-main/images/pattern-background-desktop.svg");
     }
   }
-`
+`;
 
 const Img = styled.img``;

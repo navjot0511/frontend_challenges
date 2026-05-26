@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import type { ChallengeType } from "../types";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
@@ -8,7 +8,6 @@ const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
     <div className="card">
       <div className="card-background" />
       <Link href={`/challenges/${src}/`}>
-
         <div className="card-image">
           <Image
             src={`/assets/challenges/${src}/design/${image}`}
@@ -17,7 +16,6 @@ const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
             alt={title}
           />
         </div>
-
       </Link>
       <div className="card-body">
         <div className="card-info">

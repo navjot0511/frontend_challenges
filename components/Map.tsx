@@ -8,7 +8,7 @@ interface Props {
   position?: LatLngTuple
 }
 
-const Map: React.FC<Props> = ({
+const MapComp: React.FC<Props> = ({
   position = [51.505, -0.09]
 }) => {
   return (
@@ -43,4 +43,4 @@ const LocationMarker = ({ position }: { position: LatLngTuple }) => {
   )
 }
 
-export default Map
+export default MapComp
